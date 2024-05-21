@@ -1,0 +1,29 @@
+﻿<Window x:Class="StyleSphere.Accounting"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyleSphere"
+        mc:Ignorable="d"
+        Title="Accounting" Height="450" Width="800">
+    <Grid>
+        <DockPanel>
+            <ToolBar DockPanel.Dock="Top">
+                <Button Content="Добавить товар" />
+                <TextBlock Text="Найти товар по ID:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBox Width="200" Margin="5" />
+                <Button Content="Найти" />
+                <Button Content="Подсчитать сумму всех товаров" Margin="10,0,0,0"/>
+            </ToolBar>
+
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock Text="Product Inventory Management" FontSize="20"/>
+            </StackPanel>
+        </DockPanel>
+
+        <ListBox x:Name="productPanel" MinWidth=" 200" DockPanel.Dock="Left" Background="Aquamarine" Margin="0,36,0,0">
+
+        </ListBox>
+    </Grid>
+
+</Window>

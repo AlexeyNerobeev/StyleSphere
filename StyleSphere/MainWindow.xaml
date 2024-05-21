@@ -1,0 +1,28 @@
+﻿<Window x:Class="StyleSphere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StyleSphere"
+        mc:Ignorable="d"
+        Title="StyleSphere" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Логин:" Margin="10"/>
+        <TextBox Grid.Row="1" x:Name="txtLogin" Margin="10"/>
+
+        <Label Grid.Row="2" Content="Пароль:" Margin="10"/>
+        <PasswordBox Grid.Row="3" x:Name="txtPassword" Margin="10"/>
+
+        <Button Grid.Row="4" Content="Вход" Click="SignIn_Click" Margin="10"/>
+        <Button Grid.Row="5" Content="Регистрация" Click="Register_Click" Margin="10"/>
+    </Grid>
+</Window>
